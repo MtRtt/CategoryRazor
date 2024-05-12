@@ -6,4 +6,35 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\theme\js\bootstrap.min.js" />
+    <None Include="wwwroot\theme\js\imagesloaded.pkgd.min.js" />
+    <None Include="wwwroot\theme\js\isotope.pkgd.min.js" />
+    <None Include="wwwroot\theme\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\theme\js\jquery.magnific-popup.min.js" />
+    <None Include="wwwroot\theme\js\jquery.meanmenu.min.js" />
+    <None Include="wwwroot\theme\js\jquery.smoothscroll.min.js" />
+    <None Include="wwwroot\theme\js\main.js" />
+    <None Include="wwwroot\theme\js\modernizr-3.6.0.min.js" />
+    <None Include="wwwroot\theme\js\plugins.js" />
+    <None Include="wwwroot\theme\js\popper.min.js" />
+    <None Include="wwwroot\theme\vendor\OwlCarousel\owl.carousel.min.js" />
+    <None Include="wwwroot\theme\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\theme\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\theme\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\theme\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\theme\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\theme\webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+  </ItemGroup>
+
 </Project>

@@ -1,3 +1,5 @@
+using CategoryRazor.Data;
+using CategoryRazor.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -5,16 +7,19 @@ namespace CategoryRazor.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
+        private readonly BlogDbContext _db;
+        public IndexModel( BlogDbContext db)
         {
-            _logger = logger;
+            _db = db;
+            
         }
+
+
+        public IEnumerable<Article> Articles { get; set; }
 
         public void OnGet()
         {
-
+            Articles = _db.Articles;
         }
     }
 }
