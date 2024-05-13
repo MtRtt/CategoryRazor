@@ -1,43 +1,37 @@
-﻿<!doctype html>
-<html class="no-js" lang="">
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Blogxer | Home 4</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TestRazorApp</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="~/theme/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/theme/img/favicon.png">
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="~/theme/css/normalize.css" />
-
+    <link rel="stylesheet" href="/theme/css/normalize.css">
     <!-- Main CSS -->
-    <link rel="stylesheet" href="~/theme/css/main.css" />
+    <link rel="stylesheet" href="/theme/css/main.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="~/theme/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css">
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="~/theme/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="/theme/css/fontawesome-all.min.css">
     <!-- bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="~/theme/css/animate.min.css" />
+    <link rel="stylesheet" href="/theme/css/animate.min.css">
     <!-- Popup CSS -->
-    <link rel="stylesheet" href="~/theme/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/theme/css/magnific-popup.css">
     <!-- Meanmenu CSS -->
-    <link rel="stylesheet" href="~/theme/css/meanmenu.min.css" />
+    <link rel="stylesheet" href="/theme/css/meanmenu.min.css">
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="~/theme/vendor/OwlCarousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="~/theme/vendor/OwlCarousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/theme/vendor/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/theme/vendor/OwlCarousel/owl.theme.default.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="~/theme/style.css" />
+    <link rel="stylesheet" href="/theme/style.css">
     <!-- Modernize js -->
-    <script src="~/theme/js/modernizr-3.6.0.min.js"></script>
-
+    <script src="/theme/js/modernizr-3.6.0.min.js"></script>
 </head>
-
 <body class="sticky-header">
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -68,7 +62,7 @@
                         <div class="col-lg-4 d-flex justify-content-center">
                             <div class="logo-area">
                                 <a href="index.html" class="temp-logo" id="temp-logo">
-                                    <img src="~/theme/img/logo-dark.png" alt="logo" class="img-fluid">
+                                    <img src="/theme/img/logo-dark.png" alt="logo" class="img-fluid">
                                 </a>
                             </div>
                         </div>
@@ -86,7 +80,6 @@
                     </div>
                 </div>
             </div>
-        </header>
     </div>
     <div id="rt-sticky-placeholder"></div>
     <div id="header-menu" class="header-menu menu-layout1 box-layout-child bg--light">
@@ -99,7 +92,7 @@
                                 <a asp-page="/Index">خانه</a>
                             </li>
                             <li class="hide-on-mobile-menu">
-                                <a asp-page="/Articles/Create">ایجاد مقاله</a>
+                                <a asp-page="/Articles/Index">مدیریت مقاله ها</a>
                             </li>
                             <li>
                                 <a href="#">درباره</a>
@@ -113,65 +106,48 @@
             </div>
         </div>
     </div>
-   
+    </header>
     <!-- Header Area End Here -->
     <!-- Blog Area Start Here -->
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-   
+    @RenderBody()
     <!-- Blog Area End Here -->
     <!-- Instagram Start Here -->
     <section class="instagram-feed-wrap-1">
         <div class="instagram-feed-title-1"><a href="#"><i class="fab fa-instagram"></i>دنبال کردن ما در اینستاگرام</a></div>
         <ul class="instagram-feed-figure-1">
             <li>
-                <a href="#"><img src="~/theme/img/social-figure/social-figure39.jpg" alt="Social"></a>
+                <a href="#"><img src="/theme/img/social-figure/social-figure39.jpg" alt="Social"></a>
             </li>
             <li>
-                <a href="#"><img src="~/theme/img/social-figure/social-figure40.jpg" alt="Social"></a>
+                <a href="#"><img src="/theme/img/social-figure/social-figure40.jpg" alt="Social"></a>
             </li>
             <li>
-                <a href="#"><img src="~/theme/img/social-figure/social-figure41.jpg" alt="Social"></a>
+                <a href="#"><img src="/theme/img/social-figure/social-figure41.jpg" alt="Social"></a>
             </li>
             <li>
-                <a href="#"><img src="~/theme/img/social-figure/social-figure42.jpg" alt="Social"></a>
+                <a href="#"><img src="/theme/img/social-figure/social-figure42.jpg" alt="Social"></a>
             </li>
             <li>
-                <a href="#"><img src="~/theme/img/social-figure/social-figure43.jpg" alt="Social"></a>
+                <a href="#"><img src="/theme/img/social-figure/social-figure43.jpg" alt="Social"></a>
             </li>
             <li>
-                <a href="#"><img src="~/theme/img/social-figure/social-figure44.jpg" alt="Social"></a>
+                <a href="#"><img src="/theme/img/social-figure/social-figure44.jpg" alt="Social"></a>
             </li>
             <li>
-                <a href="#"><img src="~/theme/img/social-figure/social-figure45.jpg" alt="Social"></a>
+                <a href="#"><img src="/theme/img/social-figure/social-figure45.jpg" alt="Social"></a>
             </li>
             <li>
-                <a href="#"><img src="~/theme/img/social-figure/social-figure46.jpg" alt="Social"></a>
+                <a href="#"><img src="/theme/img/social-figure/social-figure46.jpg" alt="Social"></a>
             </li>
         </ul>
     </section>
-
-    <div id="header-search" class="header-search">
-        <button type="button" class="close">×</button>
-        <form class="header-search-form">
-            <input type="search" value="" placeholder="در اینجا تایپ کنید........" />
-            <button type="submit" class="search-btn">
-                <i class="flaticon-magnifying-glass"></i>
-            </button>
-        </form>
-    </div>
     <!-- Instagram End Here -->
     <!-- Footer Area Start Here -->
-    
     <footer class="footer-wrap-layout2">
         <div class="container">
             <div class="footer-box-layout2">
                 <div class="footer-logo">
-                    <a href="index.html"><img src="~/theme/img/logo-light.png" alt="logo"></a>
+                    <a href="index.html"><img src="/theme/img/logo-light.png" alt="logo"></a>
                 </div>
                 <ul class="footer-social">
                     <li><a href="#"><i class="fab fa-facebook-f"></i>259k لایک</a></li>
@@ -183,45 +159,48 @@
             </div>
         </div>
     </footer>
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - CategoryRazor - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
     <!-- Footer Area End Here -->
     <!-- Search Box Start Here -->
-    
+    <div id="header-search" class="header-search">
+        <button type="button" class="close">×</button>
+        <form class="header-search-form">
+            <input type="search" value="" placeholder="در اینجا تایپ کنید........" />
+            <button type="submit" class="search-btn">
+                <i class="flaticon-magnifying-glass"></i>
+            </button>
+        </form>
+    </div>
     <!-- Search Box End Here -->
-    
+    </div>
+
+
+
     <!-- jquery-->
-    <script src="~/theme/js/jquery-3.3.1.min.js"></script>
+    <script src="/theme/js/jquery-3.3.1.min.js"></script>
 
     @RenderSection("Scripts", false)
+
     <!-- Plugins js -->
-    <script src="~/theme/js/plugins.js"></script>
+    <script src="/theme/js/plugins.js"></script>
     <!-- Popper js -->
-    <script src="~/theme/js/popper.min.js"></script>
+    <script src="/theme/js/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="~/theme/js/bootstrap.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
     <!-- Owl Carousel js -->
-    <script src="~/theme/vendor/OwlCarousel/owl.carousel.min.js"></script>
+    <script src="vendor/OwlCarousel/owl.carousel.min.js"></script>
     <!-- Popup js -->
-    <script src="~/theme/js/jquery.magnific-popup.min.js"></script>
+    <script src="/theme/js/jquery.magnific-popup.min.js"></script>
     <!-- Images Loaded js -->
-    <script src="~/theme/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/theme/js/imagesloaded.pkgd.min.js"></script>
     <!-- Isotop js -->
-    <script src="~/theme/js/isotope.pkgd.min.js"></script>
+    <script src="/theme/js/isotope.pkgd.min.js"></script>
     <!-- Meanmenu js -->
-    <script src="~/theme/js/jquery.meanmenu.min.js"></script>
+    <script src="/theme/js/jquery.meanmenu.min.js"></script>
     <!-- Smooth Scroll js -->
-    <script src="~/theme/js/jquery.smoothscroll.min.js"></script>
+    <script src="/theme/js/jquery.smoothscroll.min.js"></script>
     <!-- Main js -->
-    <script src="~/theme/js/main.js"></script>
+    <script src="/theme/js/main.js"></script>
 
-   @*  <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script> *@
-
-    
 </body>
+
 </html>

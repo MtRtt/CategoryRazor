@@ -1,5 +1,5 @@
 ﻿@page
-@model TestRazorApp.Pages.Articles.CreateModel
+@model TestRazorApp.Pages.Articles.EditModel
 @{
 }
 
@@ -12,6 +12,7 @@
                         <div class="card">
                             <h5 class="text-center mb-4">اطلاعات مقاله را وارد کنید</h5>
                             <form method="post" class="form-card">
+                                <input type="hidden" asp-for="Article.Id">
                                 <div class="row justify-content-between text-left">
                                     <div class="form-group col-12 flex-column d-flex"> 
                                         <label asp-for="Article.Title" class="form-control-label px-3"></label> 
@@ -54,7 +55,7 @@
                                 </div>
                                 <div class="row justify-content-end">
                                     <div class="form-group col-sm-6"> 
-                                        <button type="submit" class="btn-block btn-primary">ارسال</button> 
+                                        <button type="submit" class="btn-block btn-primary">ویرایش</button> 
                                     </div>
                                 </div>
                             </form>

@@ -5,32 +5,34 @@ using CategoryRazor.Models;
 
 namespace TestRazorApp.Pages.Articles
 {
-    public class CreateModel : PageModel
+    public class DeleteModel : PageModel
     {
         private readonly BlogDbContext _db;
 
-        public CreateModel(BlogDbContext db)
+        public DeleteModel(BlogDbContext db)
         {
             _db = db;
         }
 
-        [BindProperty]
         public Article Article { get; set; }
-        public void OnGet()
+
+        public void OnGet(int? id)
         {
+            Article = _db.Articles.Find(id);
         }
 
-        public async Task<IActionResult> OnPost()
+        public async Task<IActionResult> OnPost(int? id)
         {
             if (ModelState.IsValid)
             {
-                await _db.Articles.AddAsync(Article);
+                var article = await _db.Articles.FindAsync(id);
+                _db.Articles.Remove(article);
                 await _db.SaveChangesAsync();
                 return RedirectToPage("Index");
             }
 
             return Page();
-            
+
         }
     }
 }
