@@ -192,9 +192,11 @@
     <!-- Search Box Start Here -->
     
     <!-- Search Box End Here -->
-
+    
     <!-- jquery-->
     <script src="~/theme/js/jquery-3.3.1.min.js"></script>
+
+    @RenderSection("Scripts", false)
     <!-- Plugins js -->
     <script src="~/theme/js/plugins.js"></script>
     <!-- Popper js -->
@@ -215,10 +217,11 @@
     <script src="~/theme/js/jquery.smoothscroll.min.js"></script>
     <!-- Main js -->
     <script src="~/theme/js/main.js"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
 
-    @await RenderSectionAsync("Scripts", required: false)
+   @*  <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script> *@
+
+    
 </body>
 </html>
