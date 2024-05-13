@@ -20,11 +20,15 @@ namespace CategoryRazor.Pages.Articles
         {
         }
 
-        public async Task<IActionResult> OnPost() 
+        public async Task<IActionResult> OnPost()
         {
-            await _db.Articles.AddAsync(Article);
-            await _db.SaveChangesAsync();
-            return RedirectToPage("/Index");
+            if (ModelState.IsValid)
+            {
+                await _db.Articles.AddAsync(Article);
+                await _db.SaveChangesAsync();
+                return RedirectToPage("/Index");
+            }
+            return Page();
         }
     }
 }
